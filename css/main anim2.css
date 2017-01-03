@@ -1,0 +1,117 @@
+/* Miguel Ángel Sánchez 2015-17 */
+
+@font-face {
+    font-family: Lato;
+    font-weight: 400;
+    src: url("/fonts/lato-regular-webfont.woff");
+}
+@font-face {
+    font-family: Lato;
+    font-weight: 300;
+    src: url("/fonts/lato-light-webfont.woff");
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("img/background.jpg");
+    background-position: 50% 50%; */
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 125px);
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
+
+    width: -moz-max-content;
+}
+.header h1 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 5rem;
+    -webkit-animation: anim 1s;
+    animation: anim 1s;
+}
+.header h1:after {
+    content:"";
+    position:absolute;
+    left:0;
+    bottom: 40px;
+    right:0;
+    margin:auto;
+    background:#000;
+    height:1px;
+    -webkit-animation: animupp 1s;
+    animation: animupp 1s;
+}
+.subheader {
+    font-size: 1.7rem;
+    -webkit-animation: animsub 1s;
+    animation: animsub 1s;
+}
+
+
+@-webkit-keyframes anim {
+    0% {padding-top: 0;
+        color: #ededed;
+    }
+    100% {padding-top: 20px;
+        color: #000;
+    }
+}
+
+/* Standard syntax */
+@keyframes anim {
+    0% {padding-top: 0;
+        color: #ededed;
+        }
+    100% {padding-top: 20px;
+        color: #000;
+        }
+}
+
+@-webkit-keyframes animsub {
+    0% {color: #FFF;}
+    25% {color: #ededed;
+    }
+    100% {color: #000;
+    }
+}
+
+/* Standard syntax */
+@keyframes animsub {
+    0% {color: #FFF;}
+    25% {color: #ededed;
+    }
+    100% {color: #000;
+    }
+}
+
+@-webkit-keyframes animupp {
+    0% {bottom: 50px;
+        color: #ededed;
+    }
+    100% {bottom: 40px;
+        color: #000;
+    }
+}
+
+/* Standard syntax */
+@keyframes animupp {
+    0% { background: #ededed;}
+    15% { 1background: #ededed;
+    }
+    100% { background: #000;
+    }
+}

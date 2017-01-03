@@ -1,0 +1,184 @@
+/* Miguel Ángel Sánchez 2015-17 */
+
+@font-face {
+    font-family: Lato;
+    font-weight: 400;
+    src: url("../fonts/lato-regular-webfont.woff");
+}
+@font-face {
+    font-family: Lato;
+    font-weight: 300;
+    src: url("../fonts/lato-light-webfont.woff");
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: url(../img/background.jpg);
+    background-position-x: center;
+    background-position-y: 114%;
+    background-size: 130%, 130%;
+    -webkit-animation: animback 1s;
+    animation: animback 1s;
+}
+
+header {
+    height:55px;
+    background-color: #F2F2F2;
+    -webkit-animation: animheader 1.5s;
+    animation: animheader 1.5s;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 125px);
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 8px #4C4C4C;
+    opacity: 1;
+}
+.header h1 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 5rem;
+    -webkit-animation: anim 1s;
+    animation: anim 1s;
+}
+.subheader {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    -webkit-animation: animsub 1s;
+    animation: animsub 1s;
+}
+
+header ul {
+    margin:0;
+    list-style: outside none none;
+    padding-right: 68px;
+    float: right;
+    -webkit-animation: animheader 1.5s;
+    animation: animheader 1.5s;
+}
+header ul li {
+    padding: 13px 5px 10px 5px;
+    margin: 0 10px 0 20px;
+    background: #F2F2F2;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    -webkit-box-shadow: 0 4px 0 0 rgba(0,0,0,1);
+    -moz-box-shadow: 0 4px 0 0 rgba(0,0,0,1);
+    box-shadow: 0 4px 0 0 rgba(0,0,0,1);
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    transition: all 0.15s;
+}
+header ul li:hover {
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+    box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+}
+
+.message {
+    float: right;
+    top: calc(90% + 10px);
+    position: absolute;
+    margin-left: 85%;
+    color: #FFF;
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+}
+
+@-webkit-keyframes animheader {
+    0% {padding-top: 0;
+        opacity: 0;
+    }
+    100% {padding-top: 20px;
+        opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes animheader {
+    0% {opacity: 0.65;}
+    35% {opacity: 1;}
+}
+
+@-webkit-keyframes anim {
+    0% {padding-top: 0;
+        opacity: 0;
+    }
+    100% {padding-top: 20px;
+        opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes anim {
+    0% {padding-top: 0;
+        opacity: 0;
+        }
+    100% {padding-top: 20px;
+        opacity: 1;
+        }
+}
+
+@-webkit-keyframes animsub {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes animsub {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes animback {
+    0% {background-position-y: 111.5%;}
+    80% {background-position-y: 114%;}
+    100% {background-position-y: 114%;}
+}
+
+/* Standard syntax */
+@keyframes animback {
+    0% {background-position-y: 111.5%;}
+    80% {background-position-y: 114%;}
+    100% {background-position-y: 114%;}
+}
+
+/* Adap */
+
+@media (min-width: 1079px) {
+    .header {
+        top: calc(50% - 135px);
+    }
+}
+@media (orientation: portrait) and (max-width: 400px) {
+    body {
+        background-position: 50% 20%;
+    }
+    .header h1 {
+        font-size: 4rem;
+    }
+    .message {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
