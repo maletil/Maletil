@@ -34,5 +34,5 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 // ORDER BY `id` DESC
-
+//  TODO: Aleatorizar esto de una vez
 }
