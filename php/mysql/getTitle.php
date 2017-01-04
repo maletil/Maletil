@@ -5,6 +5,7 @@
  * Date: 02/01/2017
  * Time: 20:50
  */
+
 function getSqlTitle () {
 
 global $conn;
@@ -18,21 +19,30 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }// else { echo "BIEN CONECTADO JODER" . "<br>";}
 
-$sql = "SELECT * FROM `webdb`.`titles` WHERE id= 2";
+$sql = "SELECT MAX(id)FROM `webdb`.`titles`";
 $result = $conn->query($sql);
 
 
 if (!$result) {
-    trigger_error('Invalid query: ' . $conn->error);
+    echo "Error en el resultado";
 }
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo $row["text"];
+        $maxid = $row["MAX(id)"];
+        $ouputnumber = mt_rand(1, $maxid);
     }
-} else {
-    echo "0 results";
 }
-// ORDER BY `id` DESC
-//  TODO: Aleatorizar esto de una vez
+    $sql = "SELECT * FROM `webdb`.`titles` WHERE id= " . $ouputnumber. "";
+    $result = $conn->query($sql);
+
+    if (!$result) {
+        echo "Error en el resultado";
+    }
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            echo $row["text"];
+        }
+    }
+
 }
