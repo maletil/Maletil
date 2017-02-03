@@ -17,15 +17,17 @@
 <body>
 <header>
     <ul>
-        <li>Inicio</li>
-        <li>About</li>
+        <a href="index.php"> <li>Inicio</li> </a>
+        <a href="about.php"> <li>About</li> </a>
         <li>Contacto</li>
     </ul>
 </header>
 <div class="header">
     <h1>Maletil</h1>
 </div>
-    <div class="separator">
+    <div class="separator"></div>
+<div class="content">
+Este es un ejemplazo de texto ahí to Lorem ispum cutre inventao en castellano que al final no está tan mal.
 
     </div>
 </body>

@@ -15,6 +15,11 @@ body {
     background-color: #fefefe;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     height:50px;
     background-color: #f2f2f2;
@@ -31,8 +36,6 @@ header ul {
     list-style: outside none none;
     padding-right: 68px;
     float: right;
-    -webkit-animation: animheader 1.5s;
-    animation: animheader 1.5s;
 }
 header ul li {
     padding: 10px 5px 10px 5px;
@@ -77,4 +80,10 @@ header ul li:hover {
     background-color: #4C4C4C;
     border-radius: 100px;
     margin: 0 auto;
+}
+
+.content {
+    padding-left: 10%;
+    margin-top: 40px;
+    font-size: 1.3rem;
 }

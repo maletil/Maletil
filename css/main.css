@@ -26,6 +26,11 @@ body {
     animation: animback 1s;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     height:50px;
     background-color: #f2f2f2;
