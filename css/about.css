@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Lato;
+    font-weight: 400;
+    src: url("../fonts/lato-regular-webfont.woff");
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 300;
+    src: url("../fonts/lato-light-webfont.woff");
+}
+
+body {
+    margin: 0;
+    background-color: #fefefe;
+}
+
+header {
+    height:50px;
+    background-color: #f2f2f2;
+    -webkit-animation: animheader 1.5s;
+    animation: animheader 1.5s;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+
+header ul {
+    margin:0;
+    list-style: outside none none;
+    padding-right: 68px;
+    float: right;
+    -webkit-animation: animheader 1.5s;
+    animation: animheader 1.5s;
+}
+header ul li {
+    padding: 10px 5px 10px 5px;
+    margin: 0 10px 0 20px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    -webkit-box-shadow: 0 4px 0 0 rgb(75, 70, 46);
+    -moz-box-shadow: 0 4px 0 0 rgb(75, 70, 46);
+    box-shadow: 0 4px 0 0 rgb(75, 70, 46);
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    transition: all 0.15s;
+}
+header ul li:hover {
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+    box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+}
+
+
+.header {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #254A60;
+}
+.header h1 {
+    font-size: 5rem;
+    margin-top: 45.5px;
+    margin-bottom: 45px;
+}
+.separator {
+    width: 70%;
+    height: 4px;
+    background-color: #4C4C4C;
+    border-radius: 100px;
+    margin: 0 auto;
+}
