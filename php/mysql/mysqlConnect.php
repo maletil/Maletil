@@ -7,7 +7,7 @@
  */
 function connect($key) {
 
-    if ($key == "abesamelaja") {
+    if ($key == "bbf5d8651ef9dbf300ac0375a428bd8d") {
     global $servername;
     global $username;
     global $password;

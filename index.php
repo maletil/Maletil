@@ -1,8 +1,8 @@
-<!-- Maletil 2015-17 -->
+<!-- Handwritten by Maletil. 2015-17 -->
 <html>
 <?php
 include "php/mysql/mysqlConnect.php";
-connect("abesamelaegsgrja");
+connect("bbf5d8651ef9dbf300ac0375a428bd8d");
 ?>
     <head>
         <link rel="stylesheet" style="text/css" href="css/main.css"/>
@@ -15,8 +15,9 @@ connect("abesamelaegsgrja");
     <body>
         <header>
             <ul>
-                <li>Inicio</li>
-                <li>About</li>
+                <a href="index.php"> <li>Inicio</li> </a>
+                <a href="about.php"> <li>About</li> </a>
+                <li>Contacto</li>
             </ul>
         </header>
         <div class="header">

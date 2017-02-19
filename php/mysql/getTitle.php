@@ -22,9 +22,8 @@ if ($conn->connect_error) {
 $sql = "SELECT MAX(id)FROM `webdb`.`titles`";
 $result = $conn->query($sql);
 
-
 if (!$result) {
-    echo "Error en el resultado";
+    // echo "Error en el resultado";
 }
 if ($result->num_rows > 0) {
     // output data of each row

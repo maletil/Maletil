@@ -27,7 +27,7 @@
 </div>
     <div class="separator"></div>
 <div class="content">
-Este es un ejemplazo de texto ahí to Lorem ispum cutre inventao en castellano que al final no está tan mal.
+Este es un ejemplazo de texto ahí to Lorem ipsum cutre inventao en castellano que al final no está tan mal.
 
     </div>
 </body>
