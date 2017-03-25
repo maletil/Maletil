@@ -24,8 +24,8 @@
 </header>
 <div class="header">
     <h1>Maletil</h1>
-</div>
     <div class="separator"></div>
+</div>
 <div class="content">
 Este es un ejemplazo de texto ahí to Lorem ipsum cutre inventao en castellano que al final no está tan mal.
 

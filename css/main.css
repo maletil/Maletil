@@ -108,59 +108,43 @@ header ul li:hover {
     font-size: 1.4rem;
 }
 
-
+/* Animations */
 @-webkit-keyframes animheader {
-    0% {padding-top: 0;
-        opacity: 0;
-    }
-    100% {padding-top: 20px;
-        opacity: 1;
-    }
+    0% {opacity: 0.65;}
+    35% {opacity: 1;}
 }
 
-/* Standard syntax */
 @keyframes animheader {
     0% {opacity: 0.65;}
     35% {opacity: 1;}
 }
 
 @-webkit-keyframes fadeinLoad {
-    from {  opacity: 0;  }
-    to {  opacity: 0;  }
+    from {opacity: 0;}
+    to {opacity: 0;}
 }
 @keyframes fadeinLoad {
-    from {  opacity: 0;  }
-    to {  opacity: 0;  }
+    from {opacity: 0;}
+    to {opacity: 0;}
 }
 @-webkit-keyframes waitOnLoad {
     0% {background-position-y: -145px;}
     100% {background-position-y: -145px;}
 }
 
-/* Standard syntax */
 @keyframes waitOnLoad {
     0% {background-position-y: -145px;}
     100% {background-position-y: -145px;}
 }
 
-
 @-webkit-keyframes anim {
-    0% {padding-top: 0;
-        opacity: 0;
-    }
-    100% {padding-top: 20px;
-        opacity: 1;
-    }
+    0% {padding-top: 0; opacity: 0;}
+    100% {padding-top: 20px; opacity: 1; }
 }
 
-/* Standard syntax */
 @keyframes anim {
-    0% {padding-top: 0;
-        opacity: 0;
-        }
-    100% {padding-top: 20px;
-        opacity: 1;
-        }
+    0% {padding-top: 0; opacity: 0;}
+    100% {padding-top: 20px; opacity: 1;}
 }
 
 @-webkit-keyframes animsub {
@@ -169,7 +153,6 @@ header ul li:hover {
     100% {opacity: 1;}
 }
 
-/* Standard syntax */
 @keyframes animsub {
     0% {opacity: 0;}
     25% {opacity: 0;}
@@ -182,25 +165,42 @@ header ul li:hover {
     100% {background-position-y: -170px;}
 }
 
-/* Standard syntax */
 @keyframes animback {
     0% {background-position-y: -145px;}
     80% {background-position-y: -170px;}
     100% {background-position-y: -170px;}
 }
 
-/* Adap */
-
+/*It defines itself */
 @media (min-width: 1079px) {
     .header {
         top: calc(50% - 135px);
     }
 }
-@media (orientation: portrait) and (max-width: 400px) {
+@media (orientation: portrait) and (max-width: 450px) {
     body {
-        background-position: 50% -65px;
+        background-position: 50% -90px;
         background-size: 400%, 400%;
     }
+        @-webkit-keyframes waitOnLoad {
+            0% {background-position-y: -65px;}
+            100% {background-position-y: -65px;}
+        }
+
+        @keyframes waitOnLoad {
+            0% {background-position-y: -65px;}
+            100% {background-position-y: -65px;}
+        }
+        @-webkit-keyframes animback {
+            0% {background-position-y: -65px;}
+            80% {background-position-y: -90px;}
+            100% {background-position-y: -90px;}
+        }
+        @keyframes animback {
+            0% {background-position-y: -65px;}
+            80% {background-position-y: -90px;}
+            100% {background-position-y: -90px;}
+        }
     .header h1 {
         font-size: 4rem;
     }
