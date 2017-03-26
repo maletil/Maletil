@@ -65,9 +65,9 @@ header ul li {
     transition: all 0.15s;
 }
 header ul li:hover {
-    -webkit-box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
-    -moz-box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
-    box-shadow: 0px 4px 0px 0px rgba(191, 179, 112, 1);
+    -webkit-box-shadow: 0 4px 0 0 rgba(191, 179, 112, 1);
+    -moz-box-shadow: 0 4px 0 0 rgba(191, 179, 112, 1);
+    box-shadow: 0 4px 0 0 rgba(191, 179, 112, 1);
 }
 
 .header {
