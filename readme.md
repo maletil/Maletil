@@ -5,7 +5,7 @@
 ```JSON
 {
     "desarrollo": {
-        "web": "maletil.es",
+        "web": "https://maletil.es",
         "estado": "Te queda la vida"
     }
 }
