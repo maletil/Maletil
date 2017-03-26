@@ -36,12 +36,12 @@ if ($result->num_rows > 0) {
     $result = $conn->query($sql);
 
     if (!$result) {
-        echo "Error en el resultado";
+        // echo "Error en el resultado";
     }
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             echo $row["text"];
         }
     }
-
+    mysqli_close($conn);
 }
