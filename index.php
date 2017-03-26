@@ -11,14 +11,11 @@ connect("bbf5d8651ef9dbf300ac0375a428bd8d");
         <link rel="icon" href="img/favicon.png"/>
         <title>Maletil</title>
     </head>
-
     <body>
         <header>
-            <ul>
-                <a href="index.php"> <li>Inicio</li> </a>
-                <a href="about.php"> <li>About</li> </a>
-                <li>Contacto</li>
-            </ul>
+            <?php
+include "php/menu.php";
+            ?>
         </header>
         <div class="header">
             <h1>Maletil</h1>
