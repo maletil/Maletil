@@ -22,8 +22,8 @@ body {
     background-position-x: center;
     background-position-y: -170px;
     background-size: 130%, 130%;
-    -webkit-animation: waitOnLoad 0.2s, animback 1s 0.2s;
-    animation: waitOnLoad 0.2s, animback 1s 0.2s;
+    -webkit-animation: backOnLoad 0.2s, animback 1s 0.2s;
+    animation: backOnLoad 0.2s, animback 1s 0.2s;
 }
 
 a {
@@ -88,14 +88,14 @@ header ul li:hover {
     margin: 0;
     padding-top: 20px;
     font-size: 5rem;
-    -webkit-animation: fadeinLoad 0.2s, anim 1s 0.2s;
-    animation: fadeinLoad 0.2s, anim 1s 0.2s;
+    -webkit-animation: waitOnLoad 0.2s, h1anim 1s 0.2s;
+    animation: waitOnLoad 0.2s, h1anim 1s 0.2s;
 }
 .subheader {
     font-size: 1.7rem;
     text-transform: uppercase;
-    -webkit-animation: fadeinLoad 0.2s, animsub 1s 0.2s;
-    animation:  fadeinLoad 0.2s, animsub 1s 0.2s;
+    -webkit-animation: waitOnLoad 0.2s, animsub 1s 0.2s;
+    animation:  waitOnLoad 0.2s, animsub 1s 0.2s;
 }
 
 .message {
@@ -119,30 +119,30 @@ header ul li:hover {
     35% {opacity: 1;}
 }
 
-@-webkit-keyframes fadeinLoad {
-    from {opacity: 0;}
-    to {opacity: 0;}
-}
-@keyframes fadeinLoad {
-    from {opacity: 0;}
-    to {opacity: 0;}
-}
 @-webkit-keyframes waitOnLoad {
-    0% {background-position-y: -145px;}
-    100% {background-position-y: -145px;}
+    from {opacity: 0;}
+    to {opacity: 0;}
 }
-
 @keyframes waitOnLoad {
+    from {opacity: 0;}
+    to {opacity: 0;}
+}
+@-webkit-keyframes backOnLoad {
     0% {background-position-y: -145px;}
     100% {background-position-y: -145px;}
 }
 
-@-webkit-keyframes anim {
+@keyframes backOnLoad {
+    0% {background-position-y: -145px;}
+    100% {background-position-y: -145px;}
+}
+
+@-webkit-keyframes h1anim {
     0% {padding-top: 0; opacity: 0;}
     100% {padding-top: 20px; opacity: 1; }
 }
 
-@keyframes anim {
+@keyframes h1anim {
     0% {padding-top: 0; opacity: 0;}
     100% {padding-top: 20px; opacity: 1;}
 }
@@ -182,25 +182,25 @@ header ul li:hover {
         background-position: 50% -90px;
         background-size: 400%, 400%;
     }
-        @-webkit-keyframes waitOnLoad {
-            0% {background-position-y: -65px;}
-            100% {background-position-y: -65px;}
-        }
+    @-webkit-keyframes backOnLoad {
+        0% {background-position-y: -65px;}
+        100% {background-position-y: -65px;}
+    }
 
-        @keyframes waitOnLoad {
-            0% {background-position-y: -65px;}
-            100% {background-position-y: -65px;}
-        }
-        @-webkit-keyframes animback {
-            0% {background-position-y: -65px;}
-            80% {background-position-y: -90px;}
-            100% {background-position-y: -90px;}
-        }
-        @keyframes animback {
-            0% {background-position-y: -65px;}
-            80% {background-position-y: -90px;}
-            100% {background-position-y: -90px;}
-        }
+    @keyframes backOnLoad {
+        0% {background-position-y: -65px;}
+        100% {background-position-y: -65px;}
+    }
+    @-webkit-keyframes animback {
+        0% {background-position-y: -65px;}
+        80% {background-position-y: -90px;}
+        100% {background-position-y: -90px;}
+    }
+    @keyframes animback {
+        0% {background-position-y: -65px;}
+        80% {background-position-y: -90px;}
+        100% {background-position-y: -90px;}
+    }
     .header h1 {
         font-size: 4rem;
     }
@@ -214,5 +214,47 @@ header ul li:hover {
     .message {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+@media (orientation: landscape) and (max-width: 1100px) {
+    body {
+        background-position-y: -20px;
+    }
+    @-webkit-keyframes backOnLoad {
+        0% {background-position-y: 5px;}
+        100% {background-position-y: 5px;}
+    }
+
+    @keyframes backOnLoad {
+        0% {background-position-y: 5px;}
+        100% {background-position-y: 5px;}
+    }
+    @-webkit-keyframes animback {
+        0% {background-position-y: 5px;}
+        80% {background-position-y: -20px;}
+        100% {background-position-y: -20px;}
+    }
+    @keyframes animback {
+        0% {background-position-y: 5px;}
+        80% {background-position-y: -20px;}
+        100% {background-position-y: -20px;}
+    }
+    header ul {
+        float: none;
+        padding:0;
+    }
+}
+@media (orientation: landscape) and (max-width: 750px) and (max-height: 450px) {
+    .header h1 {
+        padding-top: 10%;
+    }
+    @-webkit-keyframes h1anim {
+        0% {padding-top: calc(10% - 20px);}
+        100% {padding-top: 10%;}
+    }
+
+    @keyframes h1anim {
+        0% {padding-top: calc(10% - 20px);}
+        100% {padding-top: 10%;}
     }
 }

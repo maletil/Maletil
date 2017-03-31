@@ -169,3 +169,9 @@ header ul li:hover {
         font-size: 1.1rem;
     }
 }
+@media (orientation: landscape) and (max-width: 1100px) {
+    header ul {
+        float: none;
+        padding:0;
+    }
+}
