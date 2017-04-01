@@ -9,6 +9,7 @@
 ?>
 <html>
     <head>
+        <link rel="stylesheet" style="text/css" href="css/menu.css"/>
         <link rel="stylesheet" style="text/css" href="css/about.css"/>
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
         <meta charset="UTF-8"/>
