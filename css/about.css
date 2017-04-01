@@ -120,7 +120,7 @@ header ul li:hover {
     font-size: 1.2rem;
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    animation: content 1s;
+    animation: content 0.7s;
 }
 
 /* Animations */
@@ -134,9 +134,14 @@ header ul li:hover {
     100% {width: 70%;}
 }
 
+@-webkit-keyframes content {
+    0% {opacity: 0.45;}
+    100% {opacity: 1;}
+}
+
 @keyframes content {
     0% {opacity: 0.45;}
-    85% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 /* It defines itself */
@@ -169,9 +174,9 @@ header ul li:hover {
         font-size: 1.1rem;
     }
 }
-@media (orientation: landscape) and (max-width: 1100px) {
+/* @media (orientation: landscape) and (max-width: 1100px) {
     header ul {
         float: none;
         padding:0;
     }
-}
+} */

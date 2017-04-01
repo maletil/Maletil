@@ -7,7 +7,7 @@
  */
 function connect($key) {
 
-    if ($key == "bbf5d8651ef9dbf300ac0375a428bd8d") {
+    if (md5($key) === '19f6106d958aa373e9d800b7a8ba7e50') {
     global $servername;
     global $username;
     global $password;
@@ -24,6 +24,6 @@ function connect($key) {
         die("Connection failed: " . $conn->connect_error);
     } */
     }else {
-     //   echo "MIERDA ESTO NO VA NI A TIROS" . "<br>";
+     //   echo "An error occurred" . "<br>";
     }
 }
