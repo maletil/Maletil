@@ -7,7 +7,11 @@
  */
 ?>
             <ul>
-                <a href="index.php"> <li>Inicio</li> </a>
-                <a href="about.php"> <li>About</li> </a>
-                <li>Content<i></i></li>
+            <a href="index.php"> <li>Home</li> </a>
+            <a href="about.php"> <li>About</li> </a>
+            <li>Content<i></i>
+                <ul>
+                    <li>d</li>
+                </ul>
+            </li>
             </ul>

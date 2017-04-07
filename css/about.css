@@ -36,9 +36,9 @@ a {
 }
 
 header ul li:hover {
-    -webkit-box-shadow: 0 4px 0 0 rgb(74, 150, 191);
-    -moz-box-shadow: 0 4px 0 0 rgb(74, 150, 191);
-    box-shadow: 0 4px 0 0 rgb(74, 150, 191);
+    -webkit-box-shadow: 0 -4px 0 0 rgb(74, 150, 191) inset;
+    -moz-box-shadow: 0 -4px 0 0 rgb(74, 150, 191) inset;
+    box-shadow: 0 -4px 0 0 rgb(74, 150, 191) inset;
 }
 
 .header {

@@ -14,7 +14,7 @@ connect("bbf5d8651ef9dbf300ac0375a428bd8d");
     </head>
     <body>
         <header>
-            <?php
+<?php
 include "php/menu.php";
             ?>
         </header>
@@ -28,10 +28,10 @@ include "php/menu.php";
             </div>
         </div>
     <div class="message">
-        <?php
-        include 'php/dateMessage.php';
-        message();
-        ?>
+<?php
+include 'php/dateMessage.php';
+message();
+?>
     </div>
     </body>
 </html>
