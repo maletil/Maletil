@@ -16,15 +16,15 @@ global $dbname;
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+     die("Connection failed: " . $conn->connect_error);
 }// else { echo "BIEN CONECTADO JODER" . "<br>";}
 
 $sql = "SELECT MAX(id)FROM `webdb`.`titles`";
 $result = $conn->query($sql);
 
 if (!$result) {
-    // echo "Error en el resultado";
-}
+     echo "Error en el resultado";
+} else {
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -44,4 +44,5 @@ if ($result->num_rows > 0) {
         }
     }
     mysqli_close($conn);
+}
 }

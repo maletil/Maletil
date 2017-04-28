@@ -80,7 +80,6 @@ header ul li:hover {
     0% {opacity: 0.65;}
     35% {opacity: 1;}
 }
-
 @keyframes animheader {
     0% {opacity: 0.65;}
     35% {opacity: 1;}
@@ -94,11 +93,11 @@ header ul li:hover {
     from {opacity: 0;}
     to {opacity: 0;}
 }
+
 @-webkit-keyframes backOnLoad {
     0% {background-position-y: -145px;}
     100% {background-position-y: -145px;}
 }
-
 @keyframes backOnLoad {
     0% {background-position-y: -145px;}
     100% {background-position-y: -145px;}
@@ -108,7 +107,6 @@ header ul li:hover {
     0% {padding-top: 0; opacity: 0;}
     100% {padding-top: 20px; opacity: 1;}
 }
-
 @keyframes h1anim {
     0% {padding-top: 0; opacity: 0;}
     100% {padding-top: 20px; opacity: 1;}
@@ -119,7 +117,6 @@ header ul li:hover {
     25% {opacity: 0;}
     100% {opacity: 1;}
 }
-
 @keyframes animsub {
     0% {opacity: 0;}
     25% {opacity: 0;}
@@ -131,7 +128,6 @@ header ul li:hover {
     80% {background-position-y: -170px;}
     100% {background-position-y: -170px;}
 }
-
 @keyframes animback {
     0% {background-position-y: -145px;}
     80% {background-position-y: -170px;}
