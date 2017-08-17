@@ -6,7 +6,7 @@
 {
     "desarrollo": {
         "web": "https://maletil.es",
-        "estado": "Te queda la vida"
+        "estado": "Repositorio desactualizado."
     }
 }
 ```
